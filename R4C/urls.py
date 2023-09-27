@@ -24,6 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('add_robot/', include('robots.urls', namespace='robots')),
     path('download-excel/', views.download_report, name='download_excel'),
+    path('orders/', include('orders.urls', namespace='orders')),
 ]
 
 if settings.DEBUG:
